@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,10 +43,87 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentMigrator, Version=3.2.9.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentMigrator.3.2.9\lib\net461\FluentMigrator.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentMigrator.Abstractions, Version=3.2.9.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentMigrator.Abstractions.3.2.9\lib\net461\FluentMigrator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.0.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.21\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -55,6 +133,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -62,6 +143,15 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.21\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.21\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -87,21 +177,1189 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Fonts\alarm-fill.svg" />
+    <Content Include="Content\Fonts\alarm.svg" />
+    <Content Include="Content\Fonts\align-bottom.svg" />
+    <Content Include="Content\Fonts\align-center.svg" />
+    <Content Include="Content\Fonts\align-end.svg" />
+    <Content Include="Content\Fonts\align-middle.svg" />
+    <Content Include="Content\Fonts\align-start.svg" />
+    <Content Include="Content\Fonts\align-top.svg" />
+    <Content Include="Content\Fonts\alt.svg" />
+    <Content Include="Content\Fonts\app-indicator.svg" />
+    <Content Include="Content\Fonts\app.svg" />
+    <Content Include="Content\Fonts\archive-fill.svg" />
+    <Content Include="Content\Fonts\archive.svg" />
+    <Content Include="Content\Fonts\arrow-90deg-down.svg" />
+    <Content Include="Content\Fonts\arrow-90deg-left.svg" />
+    <Content Include="Content\Fonts\arrow-90deg-right.svg" />
+    <Content Include="Content\Fonts\arrow-90deg-up.svg" />
+    <Content Include="Content\Fonts\arrow-bar-down.svg" />
+    <Content Include="Content\Fonts\arrow-bar-left.svg" />
+    <Content Include="Content\Fonts\arrow-bar-right.svg" />
+    <Content Include="Content\Fonts\arrow-bar-up.svg" />
+    <Content Include="Content\Fonts\arrow-clockwise.svg" />
+    <Content Include="Content\Fonts\arrow-counterclockwise.svg" />
+    <Content Include="Content\Fonts\arrow-down-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-down-circle.svg" />
+    <Content Include="Content\Fonts\arrow-down-left-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-down-left-circle.svg" />
+    <Content Include="Content\Fonts\arrow-down-left-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-down-left-square.svg" />
+    <Content Include="Content\Fonts\arrow-down-left.svg" />
+    <Content Include="Content\Fonts\arrow-down-right-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-down-right-circle.svg" />
+    <Content Include="Content\Fonts\arrow-down-right-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-down-right-square.svg" />
+    <Content Include="Content\Fonts\arrow-down-right.svg" />
+    <Content Include="Content\Fonts\arrow-down-short.svg" />
+    <Content Include="Content\Fonts\arrow-down-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-down-square.svg" />
+    <Content Include="Content\Fonts\arrow-down-up.svg" />
+    <Content Include="Content\Fonts\arrow-down.svg" />
+    <Content Include="Content\Fonts\arrow-left-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-left-circle.svg" />
+    <Content Include="Content\Fonts\arrow-left-right.svg" />
+    <Content Include="Content\Fonts\arrow-left-short.svg" />
+    <Content Include="Content\Fonts\arrow-left-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-left-square.svg" />
+    <Content Include="Content\Fonts\arrow-left.svg" />
+    <Content Include="Content\Fonts\arrow-repeat.svg" />
+    <Content Include="Content\Fonts\arrow-return-left.svg" />
+    <Content Include="Content\Fonts\arrow-return-right.svg" />
+    <Content Include="Content\Fonts\arrow-right-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-right-circle.svg" />
+    <Content Include="Content\Fonts\arrow-right-short.svg" />
+    <Content Include="Content\Fonts\arrow-right-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-right-square.svg" />
+    <Content Include="Content\Fonts\arrow-right.svg" />
+    <Content Include="Content\Fonts\arrow-up-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-up-circle.svg" />
+    <Content Include="Content\Fonts\arrow-up-left-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-up-left-circle.svg" />
+    <Content Include="Content\Fonts\arrow-up-left-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-up-left-square.svg" />
+    <Content Include="Content\Fonts\arrow-up-left.svg" />
+    <Content Include="Content\Fonts\arrow-up-right-circle-fill.svg" />
+    <Content Include="Content\Fonts\arrow-up-right-circle.svg" />
+    <Content Include="Content\Fonts\arrow-up-right-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-up-right-square.svg" />
+    <Content Include="Content\Fonts\arrow-up-right.svg" />
+    <Content Include="Content\Fonts\arrow-up-short.svg" />
+    <Content Include="Content\Fonts\arrow-up-square-fill.svg" />
+    <Content Include="Content\Fonts\arrow-up-square.svg" />
+    <Content Include="Content\Fonts\arrow-up.svg" />
+    <Content Include="Content\Fonts\arrows-angle-contract.svg" />
+    <Content Include="Content\Fonts\arrows-angle-expand.svg" />
+    <Content Include="Content\Fonts\arrows-collapse.svg" />
+    <Content Include="Content\Fonts\arrows-expand.svg" />
+    <Content Include="Content\Fonts\arrows-fullscreen.svg" />
+    <Content Include="Content\Fonts\arrows-move.svg" />
+    <Content Include="Content\Fonts\aspect-ratio-fill.svg" />
+    <Content Include="Content\Fonts\aspect-ratio.svg" />
+    <Content Include="Content\Fonts\asterisk.svg" />
+    <Content Include="Content\Fonts\at.svg" />
+    <Content Include="Content\Fonts\award-fill.svg" />
+    <Content Include="Content\Fonts\award.svg" />
+    <Content Include="Content\Fonts\back.svg" />
+    <Content Include="Content\Fonts\backspace-fill.svg" />
+    <Content Include="Content\Fonts\backspace-reverse-fill.svg" />
+    <Content Include="Content\Fonts\backspace-reverse.svg" />
+    <Content Include="Content\Fonts\backspace.svg" />
+    <Content Include="Content\Fonts\badge-4k-fill.svg" />
+    <Content Include="Content\Fonts\badge-4k.svg" />
+    <Content Include="Content\Fonts\badge-8k-fill.svg" />
+    <Content Include="Content\Fonts\badge-8k.svg" />
+    <Content Include="Content\Fonts\badge-ad-fill.svg" />
+    <Content Include="Content\Fonts\badge-ad.svg" />
+    <Content Include="Content\Fonts\badge-cc-fill.svg" />
+    <Content Include="Content\Fonts\badge-cc.svg" />
+    <Content Include="Content\Fonts\badge-hd-fill.svg" />
+    <Content Include="Content\Fonts\badge-hd.svg" />
+    <Content Include="Content\Fonts\badge-tm-fill.svg" />
+    <Content Include="Content\Fonts\badge-tm.svg" />
+    <Content Include="Content\Fonts\badge-vo-fill.svg" />
+    <Content Include="Content\Fonts\badge-vo.svg" />
+    <Content Include="Content\Fonts\bag-check-fill.svg" />
+    <Content Include="Content\Fonts\bag-check.svg" />
+    <Content Include="Content\Fonts\bag-dash-fill.svg" />
+    <Content Include="Content\Fonts\bag-dash.svg" />
+    <Content Include="Content\Fonts\bag-fill.svg" />
+    <Content Include="Content\Fonts\bag-plus-fill.svg" />
+    <Content Include="Content\Fonts\bag-plus.svg" />
+    <Content Include="Content\Fonts\bag-x-fill.svg" />
+    <Content Include="Content\Fonts\bag-x.svg" />
+    <Content Include="Content\Fonts\bag.svg" />
+    <Content Include="Content\Fonts\bar-chart-fill.svg" />
+    <Content Include="Content\Fonts\bar-chart-line-fill.svg" />
+    <Content Include="Content\Fonts\bar-chart-line.svg" />
+    <Content Include="Content\Fonts\bar-chart-steps.svg" />
+    <Content Include="Content\Fonts\bar-chart.svg" />
+    <Content Include="Content\Fonts\basket-fill.svg" />
+    <Content Include="Content\Fonts\basket.svg" />
+    <Content Include="Content\Fonts\basket2-fill.svg" />
+    <Content Include="Content\Fonts\basket2.svg" />
+    <Content Include="Content\Fonts\basket3-fill.svg" />
+    <Content Include="Content\Fonts\basket3.svg" />
+    <Content Include="Content\Fonts\battery-charging.svg" />
+    <Content Include="Content\Fonts\battery-full.svg" />
+    <Content Include="Content\Fonts\battery-half.svg" />
+    <Content Include="Content\Fonts\battery.svg" />
+    <Content Include="Content\Fonts\bell-fill.svg" />
+    <Content Include="Content\Fonts\bell.svg" />
+    <Content Include="Content\Fonts\bezier.svg" />
+    <Content Include="Content\Fonts\bezier2.svg" />
+    <Content Include="Content\Fonts\bicycle.svg" />
+    <Content Include="Content\Fonts\binoculars-fill.svg" />
+    <Content Include="Content\Fonts\binoculars.svg" />
+    <Content Include="Content\Fonts\blockquote-left.svg" />
+    <Content Include="Content\Fonts\blockquote-right.svg" />
+    <Content Include="Content\Fonts\book-fill.svg" />
+    <Content Include="Content\Fonts\book-half.svg" />
+    <Content Include="Content\Fonts\book.svg" />
+    <Content Include="Content\Fonts\bookmark-check-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-check.svg" />
+    <Content Include="Content\Fonts\bookmark-dash-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-dash.svg" />
+    <Content Include="Content\Fonts\bookmark-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-heart-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-heart.svg" />
+    <Content Include="Content\Fonts\bookmark-plus-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-plus.svg" />
+    <Content Include="Content\Fonts\bookmark-star-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-star.svg" />
+    <Content Include="Content\Fonts\bookmark-x-fill.svg" />
+    <Content Include="Content\Fonts\bookmark-x.svg" />
+    <Content Include="Content\Fonts\bookmark.svg" />
+    <Content Include="Content\Fonts\bookmarks-fill.svg" />
+    <Content Include="Content\Fonts\bookmarks.svg" />
+    <Content Include="Content\Fonts\bookshelf.svg" />
+    <Content Include="Content\Fonts\bootstrap-fill.svg" />
+    <Content Include="Content\Fonts\bootstrap-icons.svg" />
+    <Content Include="Content\Fonts\bootstrap-reboot.svg" />
+    <Content Include="Content\Fonts\bootstrap.svg" />
+    <Content Include="Content\Fonts\border-style.svg" />
+    <Content Include="Content\Fonts\border-width.svg" />
+    <Content Include="Content\Fonts\bounding-box-circles.svg" />
+    <Content Include="Content\Fonts\bounding-box.svg" />
+    <Content Include="Content\Fonts\box-arrow-down-left.svg" />
+    <Content Include="Content\Fonts\box-arrow-down-right.svg" />
+    <Content Include="Content\Fonts\box-arrow-down.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-down-left.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-down-right.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-down.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-left.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-right.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-up-left.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-up-right.svg" />
+    <Content Include="Content\Fonts\box-arrow-in-up.svg" />
+    <Content Include="Content\Fonts\box-arrow-left.svg" />
+    <Content Include="Content\Fonts\box-arrow-right.svg" />
+    <Content Include="Content\Fonts\box-arrow-up-left.svg" />
+    <Content Include="Content\Fonts\box-arrow-up-right.svg" />
+    <Content Include="Content\Fonts\box-arrow-up.svg" />
+    <Content Include="Content\Fonts\box-seam.svg" />
+    <Content Include="Content\Fonts\box.svg" />
+    <Content Include="Content\Fonts\braces.svg" />
+    <Content Include="Content\Fonts\bricks.svg" />
+    <Content Include="Content\Fonts\briefcase-fill.svg" />
+    <Content Include="Content\Fonts\briefcase.svg" />
+    <Content Include="Content\Fonts\brightness-alt-high-fill.svg" />
+    <Content Include="Content\Fonts\brightness-alt-high.svg" />
+    <Content Include="Content\Fonts\brightness-alt-low-fill.svg" />
+    <Content Include="Content\Fonts\brightness-alt-low.svg" />
+    <Content Include="Content\Fonts\brightness-high-fill.svg" />
+    <Content Include="Content\Fonts\brightness-high.svg" />
+    <Content Include="Content\Fonts\brightness-low-fill.svg" />
+    <Content Include="Content\Fonts\brightness-low.svg" />
+    <Content Include="Content\Fonts\broadcast-pin.svg" />
+    <Content Include="Content\Fonts\broadcast.svg" />
+    <Content Include="Content\Fonts\brush-fill.svg" />
+    <Content Include="Content\Fonts\brush.svg" />
+    <Content Include="Content\Fonts\bucket-fill.svg" />
+    <Content Include="Content\Fonts\bucket.svg" />
+    <Content Include="Content\Fonts\bug-fill.svg" />
+    <Content Include="Content\Fonts\bug.svg" />
+    <Content Include="Content\Fonts\building.svg" />
+    <Content Include="Content\Fonts\bullseye.svg" />
+    <Content Include="Content\Fonts\calculator-fill.svg" />
+    <Content Include="Content\Fonts\calculator.svg" />
+    <Content Include="Content\Fonts\calendar-check-fill.svg" />
+    <Content Include="Content\Fonts\calendar-check.svg" />
+    <Content Include="Content\Fonts\calendar-date-fill.svg" />
+    <Content Include="Content\Fonts\calendar-date.svg" />
+    <Content Include="Content\Fonts\calendar-day-fill.svg" />
+    <Content Include="Content\Fonts\calendar-day.svg" />
+    <Content Include="Content\Fonts\calendar-event-fill.svg" />
+    <Content Include="Content\Fonts\calendar-event.svg" />
+    <Content Include="Content\Fonts\calendar-fill.svg" />
+    <Content Include="Content\Fonts\calendar-minus-fill.svg" />
+    <Content Include="Content\Fonts\calendar-minus.svg" />
+    <Content Include="Content\Fonts\calendar-month-fill.svg" />
+    <Content Include="Content\Fonts\calendar-month.svg" />
+    <Content Include="Content\Fonts\calendar-plus-fill.svg" />
+    <Content Include="Content\Fonts\calendar-plus.svg" />
+    <Content Include="Content\Fonts\calendar-range-fill.svg" />
+    <Content Include="Content\Fonts\calendar-range.svg" />
+    <Content Include="Content\Fonts\calendar-week-fill.svg" />
+    <Content Include="Content\Fonts\calendar-week.svg" />
+    <Content Include="Content\Fonts\calendar-x-fill.svg" />
+    <Content Include="Content\Fonts\calendar-x.svg" />
+    <Content Include="Content\Fonts\calendar.svg" />
+    <Content Include="Content\Fonts\calendar2-check-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-check.svg" />
+    <Content Include="Content\Fonts\calendar2-date-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-date.svg" />
+    <Content Include="Content\Fonts\calendar2-day-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-day.svg" />
+    <Content Include="Content\Fonts\calendar2-event-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-event.svg" />
+    <Content Include="Content\Fonts\calendar2-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-minus-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-minus.svg" />
+    <Content Include="Content\Fonts\calendar2-month-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-month.svg" />
+    <Content Include="Content\Fonts\calendar2-plus-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-plus.svg" />
+    <Content Include="Content\Fonts\calendar2-range-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-range.svg" />
+    <Content Include="Content\Fonts\calendar2-week-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-week.svg" />
+    <Content Include="Content\Fonts\calendar2-x-fill.svg" />
+    <Content Include="Content\Fonts\calendar2-x.svg" />
+    <Content Include="Content\Fonts\calendar2.svg" />
+    <Content Include="Content\Fonts\calendar3-event-fill.svg" />
+    <Content Include="Content\Fonts\calendar3-event.svg" />
+    <Content Include="Content\Fonts\calendar3-fill.svg" />
+    <Content Include="Content\Fonts\calendar3-range-fill.svg" />
+    <Content Include="Content\Fonts\calendar3-range.svg" />
+    <Content Include="Content\Fonts\calendar3-week-fill.svg" />
+    <Content Include="Content\Fonts\calendar3-week.svg" />
+    <Content Include="Content\Fonts\calendar3.svg" />
+    <Content Include="Content\Fonts\calendar4-event.svg" />
+    <Content Include="Content\Fonts\calendar4-range.svg" />
+    <Content Include="Content\Fonts\calendar4-week.svg" />
+    <Content Include="Content\Fonts\calendar4.svg" />
+    <Content Include="Content\Fonts\camera-fill.svg" />
+    <Content Include="Content\Fonts\camera-reels-fill.svg" />
+    <Content Include="Content\Fonts\camera-reels.svg" />
+    <Content Include="Content\Fonts\camera-video-fill.svg" />
+    <Content Include="Content\Fonts\camera-video-off-fill.svg" />
+    <Content Include="Content\Fonts\camera-video-off.svg" />
+    <Content Include="Content\Fonts\camera-video.svg" />
+    <Content Include="Content\Fonts\camera.svg" />
+    <Content Include="Content\Fonts\camera2.svg" />
+    <Content Include="Content\Fonts\capslock-fill.svg" />
+    <Content Include="Content\Fonts\capslock.svg" />
+    <Content Include="Content\Fonts\card-checklist.svg" />
+    <Content Include="Content\Fonts\card-heading.svg" />
+    <Content Include="Content\Fonts\card-image.svg" />
+    <Content Include="Content\Fonts\card-list.svg" />
+    <Content Include="Content\Fonts\card-text.svg" />
+    <Content Include="Content\Fonts\caret-down-fill.svg" />
+    <Content Include="Content\Fonts\caret-down-square-fill.svg" />
+    <Content Include="Content\Fonts\caret-down-square.svg" />
+    <Content Include="Content\Fonts\caret-down.svg" />
+    <Content Include="Content\Fonts\caret-left-fill.svg" />
+    <Content Include="Content\Fonts\caret-left-square-fill.svg" />
+    <Content Include="Content\Fonts\caret-left-square.svg" />
+    <Content Include="Content\Fonts\caret-left.svg" />
+    <Content Include="Content\Fonts\caret-right-fill.svg" />
+    <Content Include="Content\Fonts\caret-right-square-fill.svg" />
+    <Content Include="Content\Fonts\caret-right-square.svg" />
+    <Content Include="Content\Fonts\caret-right.svg" />
+    <Content Include="Content\Fonts\caret-up-fill.svg" />
+    <Content Include="Content\Fonts\caret-up-square-fill.svg" />
+    <Content Include="Content\Fonts\caret-up-square.svg" />
+    <Content Include="Content\Fonts\caret-up.svg" />
+    <Content Include="Content\Fonts\cart-check-fill.svg" />
+    <Content Include="Content\Fonts\cart-check.svg" />
+    <Content Include="Content\Fonts\cart-dash-fill.svg" />
+    <Content Include="Content\Fonts\cart-dash.svg" />
+    <Content Include="Content\Fonts\cart-fill.svg" />
+    <Content Include="Content\Fonts\cart-plus-fill.svg" />
+    <Content Include="Content\Fonts\cart-plus.svg" />
+    <Content Include="Content\Fonts\cart-x-fill.svg" />
+    <Content Include="Content\Fonts\cart-x.svg" />
+    <Content Include="Content\Fonts\cart.svg" />
+    <Content Include="Content\Fonts\cart2.svg" />
+    <Content Include="Content\Fonts\cart3.svg" />
+    <Content Include="Content\Fonts\cart4.svg" />
+    <Content Include="Content\Fonts\cash-stack.svg" />
+    <Content Include="Content\Fonts\cash.svg" />
+    <Content Include="Content\Fonts\cast.svg" />
+    <Content Include="Content\Fonts\chat-dots-fill.svg" />
+    <Content Include="Content\Fonts\chat-dots.svg" />
+    <Content Include="Content\Fonts\chat-fill.svg" />
+    <Content Include="Content\Fonts\chat-left-dots-fill.svg" />
+    <Content Include="Content\Fonts\chat-left-dots.svg" />
+    <Content Include="Content\Fonts\chat-left-fill.svg" />
+    <Content Include="Content\Fonts\chat-left-quote-fill.svg" />
+    <Content Include="Content\Fonts\chat-left-quote.svg" />
+    <Content Include="Content\Fonts\chat-left-text-fill.svg" />
+    <Content Include="Content\Fonts\chat-left-text.svg" />
+    <Content Include="Content\Fonts\chat-left.svg" />
+    <Content Include="Content\Fonts\chat-quote-fill.svg" />
+    <Content Include="Content\Fonts\chat-quote.svg" />
+    <Content Include="Content\Fonts\chat-right-dots-fill.svg" />
+    <Content Include="Content\Fonts\chat-right-dots.svg" />
+    <Content Include="Content\Fonts\chat-right-fill.svg" />
+    <Content Include="Content\Fonts\chat-right-quote-fill.svg" />
+    <Content Include="Content\Fonts\chat-right-quote.svg" />
+    <Content Include="Content\Fonts\chat-right-text-fill.svg" />
+    <Content Include="Content\Fonts\chat-right-text.svg" />
+    <Content Include="Content\Fonts\chat-right.svg" />
+    <Content Include="Content\Fonts\chat-square-dots-fill.svg" />
+    <Content Include="Content\Fonts\chat-square-dots.svg" />
+    <Content Include="Content\Fonts\chat-square-fill.svg" />
+    <Content Include="Content\Fonts\chat-square-quote-fill.svg" />
+    <Content Include="Content\Fonts\chat-square-quote.svg" />
+    <Content Include="Content\Fonts\chat-square-text-fill.svg" />
+    <Content Include="Content\Fonts\chat-square-text.svg" />
+    <Content Include="Content\Fonts\chat-square.svg" />
+    <Content Include="Content\Fonts\chat-text-fill.svg" />
+    <Content Include="Content\Fonts\chat-text.svg" />
+    <Content Include="Content\Fonts\chat.svg" />
+    <Content Include="Content\Fonts\check-all.svg" />
+    <Content Include="Content\Fonts\check-circle-fill.svg" />
+    <Content Include="Content\Fonts\check-circle.svg" />
+    <Content Include="Content\Fonts\check-square-fill.svg" />
+    <Content Include="Content\Fonts\check-square.svg" />
+    <Content Include="Content\Fonts\check.svg" />
+    <Content Include="Content\Fonts\check2-all.svg" />
+    <Content Include="Content\Fonts\check2-circle.svg" />
+    <Content Include="Content\Fonts\check2-square.svg" />
+    <Content Include="Content\Fonts\check2.svg" />
+    <Content Include="Content\Fonts\chevron-bar-contract.svg" />
+    <Content Include="Content\Fonts\chevron-bar-down.svg" />
+    <Content Include="Content\Fonts\chevron-bar-expand.svg" />
+    <Content Include="Content\Fonts\chevron-bar-left.svg" />
+    <Content Include="Content\Fonts\chevron-bar-right.svg" />
+    <Content Include="Content\Fonts\chevron-bar-up.svg" />
+    <Content Include="Content\Fonts\chevron-compact-down.svg" />
+    <Content Include="Content\Fonts\chevron-compact-left.svg" />
+    <Content Include="Content\Fonts\chevron-compact-right.svg" />
+    <Content Include="Content\Fonts\chevron-compact-up.svg" />
+    <Content Include="Content\Fonts\chevron-contract.svg" />
+    <Content Include="Content\Fonts\chevron-double-down.svg" />
+    <Content Include="Content\Fonts\chevron-double-left.svg" />
+    <Content Include="Content\Fonts\chevron-double-right.svg" />
+    <Content Include="Content\Fonts\chevron-double-up.svg" />
+    <Content Include="Content\Fonts\chevron-down.svg" />
+    <Content Include="Content\Fonts\chevron-expand.svg" />
+    <Content Include="Content\Fonts\chevron-left.svg" />
+    <Content Include="Content\Fonts\chevron-right.svg" />
+    <Content Include="Content\Fonts\chevron-up.svg" />
+    <Content Include="Content\Fonts\circle-fill.svg" />
+    <Content Include="Content\Fonts\circle-half.svg" />
+    <Content Include="Content\Fonts\circle-square.svg" />
+    <Content Include="Content\Fonts\circle.svg" />
+    <Content Include="Content\Fonts\clipboard-check.svg" />
+    <Content Include="Content\Fonts\clipboard-data.svg" />
+    <Content Include="Content\Fonts\clipboard-minus.svg" />
+    <Content Include="Content\Fonts\clipboard-plus.svg" />
+    <Content Include="Content\Fonts\clipboard-x.svg" />
+    <Content Include="Content\Fonts\clipboard.svg" />
+    <Content Include="Content\Fonts\clock-fill.svg" />
+    <Content Include="Content\Fonts\clock-history.svg" />
+    <Content Include="Content\Fonts\clock.svg" />
+    <Content Include="Content\Fonts\cloud-arrow-down-fill.svg" />
+    <Content Include="Content\Fonts\cloud-arrow-down.svg" />
+    <Content Include="Content\Fonts\cloud-arrow-up-fill.svg" />
+    <Content Include="Content\Fonts\cloud-arrow-up.svg" />
+    <Content Include="Content\Fonts\cloud-check-fill.svg" />
+    <Content Include="Content\Fonts\cloud-check.svg" />
+    <Content Include="Content\Fonts\cloud-download-fill.svg" />
+    <Content Include="Content\Fonts\cloud-download.svg" />
+    <Content Include="Content\Fonts\cloud-fill.svg" />
+    <Content Include="Content\Fonts\cloud-minus-fill.svg" />
+    <Content Include="Content\Fonts\cloud-minus.svg" />
+    <Content Include="Content\Fonts\cloud-plus-fill.svg" />
+    <Content Include="Content\Fonts\cloud-plus.svg" />
+    <Content Include="Content\Fonts\cloud-slash-fill.svg" />
+    <Content Include="Content\Fonts\cloud-slash.svg" />
+    <Content Include="Content\Fonts\cloud-upload-fill.svg" />
+    <Content Include="Content\Fonts\cloud-upload.svg" />
+    <Content Include="Content\Fonts\cloud.svg" />
+    <Content Include="Content\Fonts\code-slash.svg" />
+    <Content Include="Content\Fonts\code-square.svg" />
+    <Content Include="Content\Fonts\code.svg" />
+    <Content Include="Content\Fonts\collection-fill.svg" />
+    <Content Include="Content\Fonts\collection-play-fill.svg" />
+    <Content Include="Content\Fonts\collection-play.svg" />
+    <Content Include="Content\Fonts\collection.svg" />
+    <Content Include="Content\Fonts\columns-gap.svg" />
+    <Content Include="Content\Fonts\columns.svg" />
+    <Content Include="Content\Fonts\command.svg" />
+    <Content Include="Content\Fonts\compass-fill.svg" />
+    <Content Include="Content\Fonts\compass.svg" />
+    <Content Include="Content\Fonts\cone-striped.svg" />
+    <Content Include="Content\Fonts\cone.svg" />
+    <Content Include="Content\Fonts\controller.svg" />
+    <Content Include="Content\Fonts\cpu-fill.svg" />
+    <Content Include="Content\Fonts\cpu.svg" />
+    <Content Include="Content\Fonts\credit-card-2-back-fill.svg" />
+    <Content Include="Content\Fonts\credit-card-2-back.svg" />
+    <Content Include="Content\Fonts\credit-card-2-front-fill.svg" />
+    <Content Include="Content\Fonts\credit-card-2-front.svg" />
+    <Content Include="Content\Fonts\credit-card-fill.svg" />
+    <Content Include="Content\Fonts\credit-card.svg" />
+    <Content Include="Content\Fonts\crop.svg" />
+    <Content Include="Content\Fonts\cup-fill.svg" />
+    <Content Include="Content\Fonts\cup-straw.svg" />
+    <Content Include="Content\Fonts\cup.svg" />
+    <Content Include="Content\Fonts\cursor-fill.svg" />
+    <Content Include="Content\Fonts\cursor-text.svg" />
+    <Content Include="Content\Fonts\cursor.svg" />
+    <Content Include="Content\Fonts\dash-circle-fill.svg" />
+    <Content Include="Content\Fonts\dash-circle.svg" />
+    <Content Include="Content\Fonts\dash-square-fill.svg" />
+    <Content Include="Content\Fonts\dash-square.svg" />
+    <Content Include="Content\Fonts\dash.svg" />
+    <Content Include="Content\Fonts\diagram-2-fill.svg" />
+    <Content Include="Content\Fonts\diagram-2.svg" />
+    <Content Include="Content\Fonts\diagram-3-fill.svg" />
+    <Content Include="Content\Fonts\diagram-3.svg" />
+    <Content Include="Content\Fonts\diamond-fill.svg" />
+    <Content Include="Content\Fonts\diamond-half.svg" />
+    <Content Include="Content\Fonts\diamond.svg" />
+    <Content Include="Content\Fonts\dice-1-fill.svg" />
+    <Content Include="Content\Fonts\dice-1.svg" />
+    <Content Include="Content\Fonts\dice-2-fill.svg" />
+    <Content Include="Content\Fonts\dice-2.svg" />
+    <Content Include="Content\Fonts\dice-3-fill.svg" />
+    <Content Include="Content\Fonts\dice-3.svg" />
+    <Content Include="Content\Fonts\dice-4-fill.svg" />
+    <Content Include="Content\Fonts\dice-4.svg" />
+    <Content Include="Content\Fonts\dice-5-fill.svg" />
+    <Content Include="Content\Fonts\dice-5.svg" />
+    <Content Include="Content\Fonts\dice-6-fill.svg" />
+    <Content Include="Content\Fonts\dice-6.svg" />
+    <Content Include="Content\Fonts\display-fill.svg" />
+    <Content Include="Content\Fonts\display.svg" />
+    <Content Include="Content\Fonts\distribute-horizontal.svg" />
+    <Content Include="Content\Fonts\distribute-vertical.svg" />
+    <Content Include="Content\Fonts\door-closed-fill.svg" />
+    <Content Include="Content\Fonts\door-closed.svg" />
+    <Content Include="Content\Fonts\door-open-fill.svg" />
+    <Content Include="Content\Fonts\door-open.svg" />
+    <Content Include="Content\Fonts\dot.svg" />
+    <Content Include="Content\Fonts\download.svg" />
+    <Content Include="Content\Fonts\droplet-fill.svg" />
+    <Content Include="Content\Fonts\droplet-half.svg" />
+    <Content Include="Content\Fonts\droplet.svg" />
+    <Content Include="Content\Fonts\earbuds.svg" />
+    <Content Include="Content\Fonts\easel-fill.svg" />
+    <Content Include="Content\Fonts\easel.svg" />
+    <Content Include="Content\Fonts\egg-fill.svg" />
+    <Content Include="Content\Fonts\egg-fried.svg" />
+    <Content Include="Content\Fonts\egg.svg" />
+    <Content Include="Content\Fonts\eject-fill.svg" />
+    <Content Include="Content\Fonts\eject.svg" />
+    <Content Include="Content\Fonts\emoji-angry.svg" />
+    <Content Include="Content\Fonts\emoji-dizzy.svg" />
+    <Content Include="Content\Fonts\emoji-expressionless.svg" />
+    <Content Include="Content\Fonts\emoji-frown.svg" />
+    <Content Include="Content\Fonts\emoji-laughing.svg" />
+    <Content Include="Content\Fonts\emoji-neutral.svg" />
+    <Content Include="Content\Fonts\emoji-smile-upside-down.svg" />
+    <Content Include="Content\Fonts\emoji-smile.svg" />
+    <Content Include="Content\Fonts\emoji-sunglasses.svg" />
+    <Content Include="Content\Fonts\envelope-fill.svg" />
+    <Content Include="Content\Fonts\envelope-open-fill.svg" />
+    <Content Include="Content\Fonts\envelope-open.svg" />
+    <Content Include="Content\Fonts\envelope.svg" />
+    <Content Include="Content\Fonts\exclamation-circle-fill.svg" />
+    <Content Include="Content\Fonts\exclamation-circle.svg" />
+    <Content Include="Content\Fonts\exclamation-diamond-fill.svg" />
+    <Content Include="Content\Fonts\exclamation-diamond.svg" />
+    <Content Include="Content\Fonts\exclamation-octagon-fill.svg" />
+    <Content Include="Content\Fonts\exclamation-octagon.svg" />
+    <Content Include="Content\Fonts\exclamation-square-fill.svg" />
+    <Content Include="Content\Fonts\exclamation-square.svg" />
+    <Content Include="Content\Fonts\exclamation-triangle-fill.svg" />
+    <Content Include="Content\Fonts\exclamation-triangle.svg" />
+    <Content Include="Content\Fonts\exclamation.svg" />
+    <Content Include="Content\Fonts\exclude.svg" />
+    <Content Include="Content\Fonts\eye-fill.svg" />
+    <Content Include="Content\Fonts\eye-slash-fill.svg" />
+    <Content Include="Content\Fonts\eye-slash.svg" />
+    <Content Include="Content\Fonts\eye.svg" />
+    <Content Include="Content\Fonts\eyeglasses.svg" />
+    <Content Include="Content\Fonts\file-arrow-down-fill.svg" />
+    <Content Include="Content\Fonts\file-arrow-down.svg" />
+    <Content Include="Content\Fonts\file-arrow-up-fill.svg" />
+    <Content Include="Content\Fonts\file-arrow-up.svg" />
+    <Content Include="Content\Fonts\file-binary-fill.svg" />
+    <Content Include="Content\Fonts\file-binary.svg" />
+    <Content Include="Content\Fonts\file-break-fill.svg" />
+    <Content Include="Content\Fonts\file-break.svg" />
+    <Content Include="Content\Fonts\file-check-fill.svg" />
+    <Content Include="Content\Fonts\file-check.svg" />
+    <Content Include="Content\Fonts\file-code-fill.svg" />
+    <Content Include="Content\Fonts\file-code.svg" />
+    <Content Include="Content\Fonts\file-diff-fill.svg" />
+    <Content Include="Content\Fonts\file-diff.svg" />
+    <Content Include="Content\Fonts\file-earmark-arrow-down-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-arrow-down.svg" />
+    <Content Include="Content\Fonts\file-earmark-arrow-up-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-arrow-up.svg" />
+    <Content Include="Content\Fonts\file-earmark-binary-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-binary.svg" />
+    <Content Include="Content\Fonts\file-earmark-break-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-break.svg" />
+    <Content Include="Content\Fonts\file-earmark-check-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-check.svg" />
+    <Content Include="Content\Fonts\file-earmark-code-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-code.svg" />
+    <Content Include="Content\Fonts\file-earmark-diff-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-diff.svg" />
+    <Content Include="Content\Fonts\file-earmark-easel-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-easel.svg" />
+    <Content Include="Content\Fonts\file-earmark-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-font-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-font.svg" />
+    <Content Include="Content\Fonts\file-earmark-image-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-image.svg" />
+    <Content Include="Content\Fonts\file-earmark-lock-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-lock.svg" />
+    <Content Include="Content\Fonts\file-earmark-lock2-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-lock2.svg" />
+    <Content Include="Content\Fonts\file-earmark-medical-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-medical.svg" />
+    <Content Include="Content\Fonts\file-earmark-minus-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-minus.svg" />
+    <Content Include="Content\Fonts\file-earmark-music-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-music.svg" />
+    <Content Include="Content\Fonts\file-earmark-person-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-person.svg" />
+    <Content Include="Content\Fonts\file-earmark-play-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-play.svg" />
+    <Content Include="Content\Fonts\file-earmark-plus-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-plus.svg" />
+    <Content Include="Content\Fonts\file-earmark-post-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-post.svg" />
+    <Content Include="Content\Fonts\file-earmark-richtext-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-richtext.svg" />
+    <Content Include="Content\Fonts\file-earmark-ruled-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-ruled.svg" />
+    <Content Include="Content\Fonts\file-earmark-slides-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-slides.svg" />
+    <Content Include="Content\Fonts\file-earmark-spreadsheet-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-spreadsheet.svg" />
+    <Content Include="Content\Fonts\file-earmark-text-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-text.svg" />
+    <Content Include="Content\Fonts\file-earmark-x-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-x.svg" />
+    <Content Include="Content\Fonts\file-earmark-zip-fill.svg" />
+    <Content Include="Content\Fonts\file-earmark-zip.svg" />
+    <Content Include="Content\Fonts\file-earmark.svg" />
+    <Content Include="Content\Fonts\file-easel-fill.svg" />
+    <Content Include="Content\Fonts\file-easel.svg" />
+    <Content Include="Content\Fonts\file-fill.svg" />
+    <Content Include="Content\Fonts\file-font-fill.svg" />
+    <Content Include="Content\Fonts\file-font.svg" />
+    <Content Include="Content\Fonts\file-image-fill.svg" />
+    <Content Include="Content\Fonts\file-image.svg" />
+    <Content Include="Content\Fonts\file-lock-fill.svg" />
+    <Content Include="Content\Fonts\file-lock.svg" />
+    <Content Include="Content\Fonts\file-lock2-fill.svg" />
+    <Content Include="Content\Fonts\file-lock2.svg" />
+    <Content Include="Content\Fonts\file-medical-fill.svg" />
+    <Content Include="Content\Fonts\file-medical.svg" />
+    <Content Include="Content\Fonts\file-minus-fill.svg" />
+    <Content Include="Content\Fonts\file-minus.svg" />
+    <Content Include="Content\Fonts\file-music-fill.svg" />
+    <Content Include="Content\Fonts\file-music.svg" />
+    <Content Include="Content\Fonts\file-person-fill.svg" />
+    <Content Include="Content\Fonts\file-person.svg" />
+    <Content Include="Content\Fonts\file-play-fill.svg" />
+    <Content Include="Content\Fonts\file-play.svg" />
+    <Content Include="Content\Fonts\file-plus-fill.svg" />
+    <Content Include="Content\Fonts\file-plus.svg" />
+    <Content Include="Content\Fonts\file-post-fill.svg" />
+    <Content Include="Content\Fonts\file-post.svg" />
+    <Content Include="Content\Fonts\file-richtext-fill.svg" />
+    <Content Include="Content\Fonts\file-richtext.svg" />
+    <Content Include="Content\Fonts\file-ruled-fill.svg" />
+    <Content Include="Content\Fonts\file-ruled.svg" />
+    <Content Include="Content\Fonts\file-slides-fill.svg" />
+    <Content Include="Content\Fonts\file-slides.svg" />
+    <Content Include="Content\Fonts\file-spreadsheet-fill.svg" />
+    <Content Include="Content\Fonts\file-spreadsheet.svg" />
+    <Content Include="Content\Fonts\file-text-fill.svg" />
+    <Content Include="Content\Fonts\file-text.svg" />
+    <Content Include="Content\Fonts\file-x-fill.svg" />
+    <Content Include="Content\Fonts\file-x.svg" />
+    <Content Include="Content\Fonts\file-zip-fill.svg" />
+    <Content Include="Content\Fonts\file-zip.svg" />
+    <Content Include="Content\Fonts\file.svg" />
+    <Content Include="Content\Fonts\files-alt.svg" />
+    <Content Include="Content\Fonts\files.svg" />
+    <Content Include="Content\Fonts\film.svg" />
+    <Content Include="Content\Fonts\filter-circle-fill.svg" />
+    <Content Include="Content\Fonts\filter-circle.svg" />
+    <Content Include="Content\Fonts\filter-left.svg" />
+    <Content Include="Content\Fonts\filter-right.svg" />
+    <Content Include="Content\Fonts\filter-square-fill.svg" />
+    <Content Include="Content\Fonts\filter-square.svg" />
+    <Content Include="Content\Fonts\filter.svg" />
+    <Content Include="Content\Fonts\flag-fill.svg" />
+    <Content Include="Content\Fonts\flag.svg" />
+    <Content Include="Content\Fonts\flower1.svg" />
+    <Content Include="Content\Fonts\flower2.svg" />
+    <Content Include="Content\Fonts\flower3.svg" />
+    <Content Include="Content\Fonts\folder-check.svg" />
+    <Content Include="Content\Fonts\folder-fill.svg" />
+    <Content Include="Content\Fonts\folder-minus.svg" />
+    <Content Include="Content\Fonts\folder-plus.svg" />
+    <Content Include="Content\Fonts\folder-symlink-fill.svg" />
+    <Content Include="Content\Fonts\folder-symlink.svg" />
+    <Content Include="Content\Fonts\folder-x.svg" />
+    <Content Include="Content\Fonts\folder.svg" />
+    <Content Include="Content\Fonts\folder2-open.svg" />
+    <Content Include="Content\Fonts\folder2.svg" />
+    <Content Include="Content\Fonts\fonts.svg" />
+    <Content Include="Content\Fonts\forward-fill.svg" />
+    <Content Include="Content\Fonts\forward.svg" />
+    <Content Include="Content\Fonts\front.svg" />
+    <Content Include="Content\Fonts\fullscreen-exit.svg" />
+    <Content Include="Content\Fonts\fullscreen.svg" />
+    <Content Include="Content\Fonts\funnel-fill.svg" />
+    <Content Include="Content\Fonts\funnel.svg" />
+    <Content Include="Content\Fonts\gear-fill.svg" />
+    <Content Include="Content\Fonts\gear-wide-connected.svg" />
+    <Content Include="Content\Fonts\gear-wide.svg" />
+    <Content Include="Content\Fonts\gear.svg" />
+    <Content Include="Content\Fonts\gem.svg" />
+    <Content Include="Content\Fonts\geo-alt-fill.svg" />
+    <Content Include="Content\Fonts\geo-alt.svg" />
+    <Content Include="Content\Fonts\geo-fill.svg" />
+    <Content Include="Content\Fonts\geo.svg" />
+    <Content Include="Content\Fonts\gift-fill.svg" />
+    <Content Include="Content\Fonts\gift.svg" />
+    <Content Include="Content\Fonts\globe.svg" />
+    <Content Include="Content\Fonts\globe2.svg" />
+    <Content Include="Content\Fonts\graph-down.svg" />
+    <Content Include="Content\Fonts\graph-up.svg" />
+    <Content Include="Content\Fonts\grid-1x2-fill.svg" />
+    <Content Include="Content\Fonts\grid-1x2.svg" />
+    <Content Include="Content\Fonts\grid-3x2-gap-fill.svg" />
+    <Content Include="Content\Fonts\grid-3x2-gap.svg" />
+    <Content Include="Content\Fonts\grid-3x2.svg" />
+    <Content Include="Content\Fonts\grid-3x3-gap-fill.svg" />
+    <Content Include="Content\Fonts\grid-3x3-gap.svg" />
+    <Content Include="Content\Fonts\grid-3x3.svg" />
+    <Content Include="Content\Fonts\grid-fill.svg" />
+    <Content Include="Content\Fonts\grid.svg" />
+    <Content Include="Content\Fonts\grip-horizontal.svg" />
+    <Content Include="Content\Fonts\grip-vertical.svg" />
+    <Content Include="Content\Fonts\hammer.svg" />
+    <Content Include="Content\Fonts\hand-index-thumb.svg" />
+    <Content Include="Content\Fonts\hand-index.svg" />
+    <Content Include="Content\Fonts\hand-thumbs-down.svg" />
+    <Content Include="Content\Fonts\hand-thumbs-up.svg" />
+    <Content Include="Content\Fonts\handbag-fill.svg" />
+    <Content Include="Content\Fonts\handbag.svg" />
+    <Content Include="Content\Fonts\hash.svg" />
+    <Content Include="Content\Fonts\hdd-fill.svg" />
+    <Content Include="Content\Fonts\hdd-network-fill.svg" />
+    <Content Include="Content\Fonts\hdd-network.svg" />
+    <Content Include="Content\Fonts\hdd-rack-fill.svg" />
+    <Content Include="Content\Fonts\hdd-rack.svg" />
+    <Content Include="Content\Fonts\hdd-stack-fill.svg" />
+    <Content Include="Content\Fonts\hdd-stack.svg" />
+    <Content Include="Content\Fonts\hdd.svg" />
+    <Content Include="Content\Fonts\headphones.svg" />
+    <Content Include="Content\Fonts\headset.svg" />
+    <Content Include="Content\Fonts\heart-fill.svg" />
+    <Content Include="Content\Fonts\heart-half.svg" />
+    <Content Include="Content\Fonts\heart.svg" />
+    <Content Include="Content\Fonts\heptagon-fill.svg" />
+    <Content Include="Content\Fonts\heptagon-half.svg" />
+    <Content Include="Content\Fonts\heptagon.svg" />
+    <Content Include="Content\Fonts\hexagon-fill.svg" />
+    <Content Include="Content\Fonts\hexagon-half.svg" />
+    <Content Include="Content\Fonts\hexagon.svg" />
+    <Content Include="Content\Fonts\hourglass-bottom.svg" />
+    <Content Include="Content\Fonts\hourglass-split.svg" />
+    <Content Include="Content\Fonts\hourglass-top.svg" />
+    <Content Include="Content\Fonts\hourglass.svg" />
+    <Content Include="Content\Fonts\house-door-fill.svg" />
+    <Content Include="Content\Fonts\house-door.svg" />
+    <Content Include="Content\Fonts\house-fill.svg" />
+    <Content Include="Content\Fonts\house.svg" />
+    <Content Include="Content\Fonts\hr.svg" />
+    <Content Include="Content\Fonts\image-alt.svg" />
+    <Content Include="Content\Fonts\image-fill.svg" />
+    <Content Include="Content\Fonts\image.svg" />
+    <Content Include="Content\Fonts\images.svg" />
+    <Content Include="Content\Fonts\inbox-fill.svg" />
+    <Content Include="Content\Fonts\inbox.svg" />
+    <Content Include="Content\Fonts\inboxes-fill.svg" />
+    <Content Include="Content\Fonts\inboxes.svg" />
+    <Content Include="Content\Fonts\info-circle-fill.svg" />
+    <Content Include="Content\Fonts\info-circle.svg" />
+    <Content Include="Content\Fonts\info-square-fill.svg" />
+    <Content Include="Content\Fonts\info-square.svg" />
+    <Content Include="Content\Fonts\info.svg" />
+    <Content Include="Content\Fonts\input-cursor-text.svg" />
+    <Content Include="Content\Fonts\input-cursor.svg" />
+    <Content Include="Content\Fonts\intersect.svg" />
+    <Content Include="Content\Fonts\journal-album.svg" />
+    <Content Include="Content\Fonts\journal-arrow-down.svg" />
+    <Content Include="Content\Fonts\journal-arrow-up.svg" />
+    <Content Include="Content\Fonts\journal-check.svg" />
+    <Content Include="Content\Fonts\journal-code.svg" />
+    <Content Include="Content\Fonts\journal-medical.svg" />
+    <Content Include="Content\Fonts\journal-minus.svg" />
+    <Content Include="Content\Fonts\journal-plus.svg" />
+    <Content Include="Content\Fonts\journal-richtext.svg" />
+    <Content Include="Content\Fonts\journal-text.svg" />
+    <Content Include="Content\Fonts\journal-x.svg" />
+    <Content Include="Content\Fonts\journal.svg" />
+    <Content Include="Content\Fonts\journals.svg" />
+    <Content Include="Content\Fonts\joystick.svg" />
+    <Content Include="Content\Fonts\justify-left.svg" />
+    <Content Include="Content\Fonts\justify-right.svg" />
+    <Content Include="Content\Fonts\justify.svg" />
+    <Content Include="Content\Fonts\kanban-fill.svg" />
+    <Content Include="Content\Fonts\kanban.svg" />
+    <Content Include="Content\Fonts\key-fill.svg" />
+    <Content Include="Content\Fonts\key.svg" />
+    <Content Include="Content\Fonts\keyboard-fill.svg" />
+    <Content Include="Content\Fonts\keyboard.svg" />
+    <Content Include="Content\Fonts\ladder.svg" />
+    <Content Include="Content\Fonts\lamp-fill.svg" />
+    <Content Include="Content\Fonts\lamp.svg" />
+    <Content Include="Content\Fonts\laptop-fill.svg" />
+    <Content Include="Content\Fonts\laptop.svg" />
+    <Content Include="Content\Fonts\layers-fill.svg" />
+    <Content Include="Content\Fonts\layers-half.svg" />
+    <Content Include="Content\Fonts\layers.svg" />
+    <Content Include="Content\Fonts\layout-sidebar-inset-reverse.svg" />
+    <Content Include="Content\Fonts\layout-sidebar-inset.svg" />
+    <Content Include="Content\Fonts\layout-sidebar-reverse.svg" />
+    <Content Include="Content\Fonts\layout-sidebar.svg" />
+    <Content Include="Content\Fonts\layout-split.svg" />
+    <Content Include="Content\Fonts\layout-text-sidebar-reverse.svg" />
+    <Content Include="Content\Fonts\layout-text-sidebar.svg" />
+    <Content Include="Content\Fonts\layout-text-window-reverse.svg" />
+    <Content Include="Content\Fonts\layout-text-window.svg" />
+    <Content Include="Content\Fonts\layout-three-columns.svg" />
+    <Content Include="Content\Fonts\layout-wtf.svg" />
+    <Content Include="Content\Fonts\life-preserver.svg" />
+    <Content Include="Content\Fonts\lightning-fill.svg" />
+    <Content Include="Content\Fonts\lightning.svg" />
+    <Content Include="Content\Fonts\link-45deg.svg" />
+    <Content Include="Content\Fonts\link.svg" />
+    <Content Include="Content\Fonts\list-check.svg" />
+    <Content Include="Content\Fonts\list-nested.svg" />
+    <Content Include="Content\Fonts\list-ol.svg" />
+    <Content Include="Content\Fonts\list-stars.svg" />
+    <Content Include="Content\Fonts\list-task.svg" />
+    <Content Include="Content\Fonts\list-ul.svg" />
+    <Content Include="Content\Fonts\list.svg" />
+    <Content Include="Content\Fonts\lock-fill.svg" />
+    <Content Include="Content\Fonts\lock.svg" />
+    <Content Include="Content\Fonts\mailbox.svg" />
+    <Content Include="Content\Fonts\mailbox2.svg" />
+    <Content Include="Content\Fonts\map-fill.svg" />
+    <Content Include="Content\Fonts\map.svg" />
+    <Content Include="Content\Fonts\markdown-fill.svg" />
+    <Content Include="Content\Fonts\markdown.svg" />
+    <Content Include="Content\Fonts\menu-app-fill.svg" />
+    <Content Include="Content\Fonts\menu-app.svg" />
+    <Content Include="Content\Fonts\menu-button-fill.svg" />
+    <Content Include="Content\Fonts\menu-button-wide-fill.svg" />
+    <Content Include="Content\Fonts\menu-button-wide.svg" />
+    <Content Include="Content\Fonts\menu-button.svg" />
+    <Content Include="Content\Fonts\menu-down.svg" />
+    <Content Include="Content\Fonts\menu-up.svg" />
+    <Content Include="Content\Fonts\mic-fill.svg" />
+    <Content Include="Content\Fonts\mic-mute-fill.svg" />
+    <Content Include="Content\Fonts\mic-mute.svg" />
+    <Content Include="Content\Fonts\mic.svg" />
+    <Content Include="Content\Fonts\minecart-loaded.svg" />
+    <Content Include="Content\Fonts\minecart.svg" />
+    <Content Include="Content\Fonts\moon.svg" />
+    <Content Include="Content\Fonts\mouse.svg" />
+    <Content Include="Content\Fonts\mouse2.svg" />
+    <Content Include="Content\Fonts\mouse3.svg" />
+    <Content Include="Content\Fonts\music-note-beamed.svg" />
+    <Content Include="Content\Fonts\music-note-list.svg" />
+    <Content Include="Content\Fonts\music-note.svg" />
+    <Content Include="Content\Fonts\music-player-fill.svg" />
+    <Content Include="Content\Fonts\music-player.svg" />
+    <Content Include="Content\Fonts\newspaper.svg" />
+    <Content Include="Content\Fonts\node-minus-fill.svg" />
+    <Content Include="Content\Fonts\node-minus.svg" />
+    <Content Include="Content\Fonts\node-plus-fill.svg" />
+    <Content Include="Content\Fonts\node-plus.svg" />
+    <Content Include="Content\Fonts\nut-fill.svg" />
+    <Content Include="Content\Fonts\nut.svg" />
+    <Content Include="Content\Fonts\octagon-fill.svg" />
+    <Content Include="Content\Fonts\octagon-half.svg" />
+    <Content Include="Content\Fonts\octagon.svg" />
+    <Content Include="Content\Fonts\option.svg" />
+    <Content Include="Content\Fonts\outlet.svg" />
+    <Content Include="Content\Fonts\paperclip.svg" />
+    <Content Include="Content\Fonts\paragraph.svg" />
+    <Content Include="Content\Fonts\patch-check-fll.svg" />
+    <Content Include="Content\Fonts\patch-check.svg" />
+    <Content Include="Content\Fonts\patch-exclamation-fll.svg" />
+    <Content Include="Content\Fonts\patch-exclamation.svg" />
+    <Content Include="Content\Fonts\patch-minus-fll.svg" />
+    <Content Include="Content\Fonts\patch-minus.svg" />
+    <Content Include="Content\Fonts\patch-plus-fll.svg" />
+    <Content Include="Content\Fonts\patch-plus.svg" />
+    <Content Include="Content\Fonts\patch-question-fll.svg" />
+    <Content Include="Content\Fonts\patch-question.svg" />
+    <Content Include="Content\Fonts\pause-fill.svg" />
+    <Content Include="Content\Fonts\pause.svg" />
+    <Content Include="Content\Fonts\peace-fill.svg" />
+    <Content Include="Content\Fonts\peace.svg" />
+    <Content Include="Content\Fonts\pen-fill.svg" />
+    <Content Include="Content\Fonts\pen.svg" />
+    <Content Include="Content\Fonts\pencil-fill.svg" />
+    <Content Include="Content\Fonts\pencil-square.svg" />
+    <Content Include="Content\Fonts\pencil.svg" />
+    <Content Include="Content\Fonts\pentagon-fill.svg" />
+    <Content Include="Content\Fonts\pentagon-half.svg" />
+    <Content Include="Content\Fonts\pentagon.svg" />
+    <Content Include="Content\Fonts\people-fill.svg" />
+    <Content Include="Content\Fonts\people.svg" />
+    <Content Include="Content\Fonts\percent.svg" />
+    <Content Include="Content\Fonts\person-badge-fill.svg" />
+    <Content Include="Content\Fonts\person-badge.svg" />
+    <Content Include="Content\Fonts\person-bounding-box.svg" />
+    <Content Include="Content\Fonts\person-check-fill.svg" />
+    <Content Include="Content\Fonts\person-check.svg" />
+    <Content Include="Content\Fonts\person-circle.svg" />
+    <Content Include="Content\Fonts\person-dash-fill.svg" />
+    <Content Include="Content\Fonts\person-dash.svg" />
+    <Content Include="Content\Fonts\person-fill.svg" />
+    <Content Include="Content\Fonts\person-lines-fill.svg" />
+    <Content Include="Content\Fonts\person-plus-fill.svg" />
+    <Content Include="Content\Fonts\person-plus.svg" />
+    <Content Include="Content\Fonts\person-square.svg" />
+    <Content Include="Content\Fonts\person-x-fill.svg" />
+    <Content Include="Content\Fonts\person-x.svg" />
+    <Content Include="Content\Fonts\person.svg" />
+    <Content Include="Content\Fonts\phone-fill.svg" />
+    <Content Include="Content\Fonts\phone-landscape-fill.svg" />
+    <Content Include="Content\Fonts\phone-landscape.svg" />
+    <Content Include="Content\Fonts\phone-vibrate.svg" />
+    <Content Include="Content\Fonts\phone.svg" />
+    <Content Include="Content\Fonts\pie-chart-fill.svg" />
+    <Content Include="Content\Fonts\pie-chart.svg" />
+    <Content Include="Content\Fonts\pip-fill.svg" />
+    <Content Include="Content\Fonts\pip.svg" />
+    <Content Include="Content\Fonts\play-fill.svg" />
+    <Content Include="Content\Fonts\play.svg" />
+    <Content Include="Content\Fonts\plug-fill.svg" />
+    <Content Include="Content\Fonts\plug.svg" />
+    <Content Include="Content\Fonts\plus-circle-fill.svg" />
+    <Content Include="Content\Fonts\plus-circle.svg" />
+    <Content Include="Content\Fonts\plus-square-fill.svg" />
+    <Content Include="Content\Fonts\plus-square.svg" />
+    <Content Include="Content\Fonts\plus.svg" />
+    <Content Include="Content\Fonts\power.svg" />
+    <Content Include="Content\Fonts\printer-fill.svg" />
+    <Content Include="Content\Fonts\printer.svg" />
+    <Content Include="Content\Fonts\puzzle-fill.svg" />
+    <Content Include="Content\Fonts\puzzle.svg" />
+    <Content Include="Content\Fonts\question-circle-fill.svg" />
+    <Content Include="Content\Fonts\question-circle.svg" />
+    <Content Include="Content\Fonts\question-diamond-fill.svg" />
+    <Content Include="Content\Fonts\question-diamond.svg" />
+    <Content Include="Content\Fonts\question-octagon-fill.svg" />
+    <Content Include="Content\Fonts\question-octagon.svg" />
+    <Content Include="Content\Fonts\question-square-fill.svg" />
+    <Content Include="Content\Fonts\question-square.svg" />
+    <Content Include="Content\Fonts\question.svg" />
+    <Content Include="Content\Fonts\receipt-cutoff.svg" />
+    <Content Include="Content\Fonts\receipt.svg" />
+    <Content Include="Content\Fonts\reception-0.svg" />
+    <Content Include="Content\Fonts\reception-1.svg" />
+    <Content Include="Content\Fonts\reception-2.svg" />
+    <Content Include="Content\Fonts\reception-3.svg" />
+    <Content Include="Content\Fonts\reception-4.svg" />
+    <Content Include="Content\Fonts\reply-all-fill.svg" />
+    <Content Include="Content\Fonts\reply-all.svg" />
+    <Content Include="Content\Fonts\reply-fill.svg" />
+    <Content Include="Content\Fonts\reply.svg" />
+    <Content Include="Content\Fonts\rss-fill.svg" />
+    <Content Include="Content\Fonts\rss.svg" />
+    <Content Include="Content\Fonts\scissors.svg" />
+    <Content Include="Content\Fonts\screwdriver.svg" />
+    <Content Include="Content\Fonts\search.svg" />
+    <Content Include="Content\Fonts\segmented-nav.svg" />
+    <Content Include="Content\Fonts\server.svg" />
+    <Content Include="Content\Fonts\share-fill.svg" />
+    <Content Include="Content\Fonts\share.svg" />
+    <Content Include="Content\Fonts\shield-check.svg" />
+    <Content Include="Content\Fonts\shield-exclamation.svg" />
+    <Content Include="Content\Fonts\shield-fill-check.svg" />
+    <Content Include="Content\Fonts\shield-fill-exclamation.svg" />
+    <Content Include="Content\Fonts\shield-fill-minus.svg" />
+    <Content Include="Content\Fonts\shield-fill-plus.svg" />
+    <Content Include="Content\Fonts\shield-fill-x.svg" />
+    <Content Include="Content\Fonts\shield-fill.svg" />
+    <Content Include="Content\Fonts\shield-lock-fill.svg" />
+    <Content Include="Content\Fonts\shield-lock.svg" />
+    <Content Include="Content\Fonts\shield-minus.svg" />
+    <Content Include="Content\Fonts\shield-plus.svg" />
+    <Content Include="Content\Fonts\shield-shaded.svg" />
+    <Content Include="Content\Fonts\shield-slash-fill.svg" />
+    <Content Include="Content\Fonts\shield-slash.svg" />
+    <Content Include="Content\Fonts\shield-x.svg" />
+    <Content Include="Content\Fonts\shield.svg" />
+    <Content Include="Content\Fonts\shift-fill.svg" />
+    <Content Include="Content\Fonts\shift.svg" />
+    <Content Include="Content\Fonts\shop-window.svg" />
+    <Content Include="Content\Fonts\shop.svg" />
+    <Content Include="Content\Fonts\shuffle.svg" />
+    <Content Include="Content\Fonts\signpost-2-fill.svg" />
+    <Content Include="Content\Fonts\signpost-2.svg" />
+    <Content Include="Content\Fonts\signpost-fill.svg" />
+    <Content Include="Content\Fonts\signpost-split-fill.svg" />
+    <Content Include="Content\Fonts\signpost-split.svg" />
+    <Content Include="Content\Fonts\signpost.svg" />
+    <Content Include="Content\Fonts\sim-fill.svg" />
+    <Content Include="Content\Fonts\sim.svg" />
+    <Content Include="Content\Fonts\skip-backward-fill.svg" />
+    <Content Include="Content\Fonts\skip-backward.svg" />
+    <Content Include="Content\Fonts\skip-end-fill.svg" />
+    <Content Include="Content\Fonts\skip-end.svg" />
+    <Content Include="Content\Fonts\skip-forward-fill.svg" />
+    <Content Include="Content\Fonts\skip-forward.svg" />
+    <Content Include="Content\Fonts\skip-start-fill.svg" />
+    <Content Include="Content\Fonts\skip-start.svg" />
+    <Content Include="Content\Fonts\slash-circle-fill.svg" />
+    <Content Include="Content\Fonts\slash-circle.svg" />
+    <Content Include="Content\Fonts\slash-square-fill.svg" />
+    <Content Include="Content\Fonts\slash-square.svg" />
+    <Content Include="Content\Fonts\slash.svg" />
+    <Content Include="Content\Fonts\sliders.svg" />
+    <Content Include="Content\Fonts\smartwatch.svg" />
+    <Content Include="Content\Fonts\sort-alpha-down-alt.svg" />
+    <Content Include="Content\Fonts\sort-alpha-down.svg" />
+    <Content Include="Content\Fonts\sort-alpha-up-alt.svg" />
+    <Content Include="Content\Fonts\sort-alpha-up.svg" />
+    <Content Include="Content\Fonts\sort-down-alt.svg" />
+    <Content Include="Content\Fonts\sort-down.svg" />
+    <Content Include="Content\Fonts\sort-numeric-down-alt.svg" />
+    <Content Include="Content\Fonts\sort-numeric-down.svg" />
+    <Content Include="Content\Fonts\sort-numeric-up-alt.svg" />
+    <Content Include="Content\Fonts\sort-numeric-up.svg" />
+    <Content Include="Content\Fonts\sort-up-alt.svg" />
+    <Content Include="Content\Fonts\sort-up.svg" />
+    <Content Include="Content\Fonts\soundwave.svg" />
+    <Content Include="Content\Fonts\speaker-fill.svg" />
+    <Content Include="Content\Fonts\speaker.svg" />
+    <Content Include="Content\Fonts\spellcheck.svg" />
+    <Content Include="Content\Fonts\square-fill.svg" />
+    <Content Include="Content\Fonts\square-half.svg" />
+    <Content Include="Content\Fonts\square.svg" />
+    <Content Include="Content\Fonts\star-fill.svg" />
+    <Content Include="Content\Fonts\star-half.svg" />
+    <Content Include="Content\Fonts\star.svg" />
+    <Content Include="Content\Fonts\stickies-fill.svg" />
+    <Content Include="Content\Fonts\stickies.svg" />
+    <Content Include="Content\Fonts\sticky-fill.svg" />
+    <Content Include="Content\Fonts\sticky.svg" />
+    <Content Include="Content\Fonts\stop-fill.svg" />
+    <Content Include="Content\Fonts\stop.svg" />
+    <Content Include="Content\Fonts\stoplights-fill.svg" />
+    <Content Include="Content\Fonts\stoplights.svg" />
+    <Content Include="Content\Fonts\stopwatch-fill.svg" />
+    <Content Include="Content\Fonts\stopwatch.svg" />
+    <Content Include="Content\Fonts\subtract.svg" />
+    <Content Include="Content\Fonts\suit-club-fill.svg" />
+    <Content Include="Content\Fonts\suit-club.svg" />
+    <Content Include="Content\Fonts\suit-diamond-fill.svg" />
+    <Content Include="Content\Fonts\suit-diamond.svg" />
+    <Content Include="Content\Fonts\suit-heart-fill.svg" />
+    <Content Include="Content\Fonts\suit-heart.svg" />
+    <Content Include="Content\Fonts\suit-spade-fill.svg" />
+    <Content Include="Content\Fonts\suit-spade.svg" />
+    <Content Include="Content\Fonts\sun.svg" />
+    <Content Include="Content\Fonts\sunglasses.svg" />
+    <Content Include="Content\Fonts\table.svg" />
+    <Content Include="Content\Fonts\tablet-fill.svg" />
+    <Content Include="Content\Fonts\tablet-landscape-fill.svg" />
+    <Content Include="Content\Fonts\tablet-landscape.svg" />
+    <Content Include="Content\Fonts\tablet.svg" />
+    <Content Include="Content\Fonts\tag-fill.svg" />
+    <Content Include="Content\Fonts\tag.svg" />
+    <Content Include="Content\Fonts\tags-fill.svg" />
+    <Content Include="Content\Fonts\tags.svg" />
+    <Content Include="Content\Fonts\telephone-fill.svg" />
+    <Content Include="Content\Fonts\telephone-forward-fill.svg" />
+    <Content Include="Content\Fonts\telephone-forward.svg" />
+    <Content Include="Content\Fonts\telephone-inbound-fill.svg" />
+    <Content Include="Content\Fonts\telephone-inbound.svg" />
+    <Content Include="Content\Fonts\telephone-minus-fill.svg" />
+    <Content Include="Content\Fonts\telephone-minus.svg" />
+    <Content Include="Content\Fonts\telephone-outbound-fill.svg" />
+    <Content Include="Content\Fonts\telephone-outbound.svg" />
+    <Content Include="Content\Fonts\telephone-plus-fill.svg" />
+    <Content Include="Content\Fonts\telephone-plus.svg" />
+    <Content Include="Content\Fonts\telephone-x-fill.svg" />
+    <Content Include="Content\Fonts\telephone-x.svg" />
+    <Content Include="Content\Fonts\telephone.svg" />
+    <Content Include="Content\Fonts\terminal-fill.svg" />
+    <Content Include="Content\Fonts\terminal.svg" />
+    <Content Include="Content\Fonts\text-center.svg" />
+    <Content Include="Content\Fonts\text-indent-left.svg" />
+    <Content Include="Content\Fonts\text-indent-right.svg" />
+    <Content Include="Content\Fonts\text-left.svg" />
+    <Content Include="Content\Fonts\text-paragraph.svg" />
+    <Content Include="Content\Fonts\text-right.svg" />
+    <Content Include="Content\Fonts\textarea-resize.svg" />
+    <Content Include="Content\Fonts\textarea-t.svg" />
+    <Content Include="Content\Fonts\textarea.svg" />
+    <Content Include="Content\Fonts\thermometer-half.svg" />
+    <Content Include="Content\Fonts\thermometer.svg" />
+    <Content Include="Content\Fonts\three-dots-vertical.svg" />
+    <Content Include="Content\Fonts\three-dots.svg" />
+    <Content Include="Content\Fonts\toggle-off.svg" />
+    <Content Include="Content\Fonts\toggle-on.svg" />
+    <Content Include="Content\Fonts\toggle2-off.svg" />
+    <Content Include="Content\Fonts\toggle2-on.svg" />
+    <Content Include="Content\Fonts\toggles.svg" />
+    <Content Include="Content\Fonts\toggles2.svg" />
+    <Content Include="Content\Fonts\tools.svg" />
+    <Content Include="Content\Fonts\trash-fill.svg" />
+    <Content Include="Content\Fonts\trash.svg" />
+    <Content Include="Content\Fonts\trash2-fill.svg" />
+    <Content Include="Content\Fonts\trash2.svg" />
+    <Content Include="Content\Fonts\tree-fill.svg" />
+    <Content Include="Content\Fonts\tree.svg" />
+    <Content Include="Content\Fonts\triangle-fill.svg" />
+    <Content Include="Content\Fonts\triangle-half.svg" />
+    <Content Include="Content\Fonts\triangle.svg" />
+    <Content Include="Content\Fonts\trophy-fill.svg" />
+    <Content Include="Content\Fonts\trophy.svg" />
+    <Content Include="Content\Fonts\truck-flatbed.svg" />
+    <Content Include="Content\Fonts\truck.svg" />
+    <Content Include="Content\Fonts\tv-fill.svg" />
+    <Content Include="Content\Fonts\tv.svg" />
+    <Content Include="Content\Fonts\type-bold.svg" />
+    <Content Include="Content\Fonts\type-h1.svg" />
+    <Content Include="Content\Fonts\type-h2.svg" />
+    <Content Include="Content\Fonts\type-h3.svg" />
+    <Content Include="Content\Fonts\type-italic.svg" />
+    <Content Include="Content\Fonts\type-strikethrough.svg" />
+    <Content Include="Content\Fonts\type-underline.svg" />
+    <Content Include="Content\Fonts\type.svg" />
+    <Content Include="Content\Fonts\ui-checks-grid.svg" />
+    <Content Include="Content\Fonts\ui-checks.svg" />
+    <Content Include="Content\Fonts\ui-radios-grid.svg" />
+    <Content Include="Content\Fonts\ui-radios.svg" />
+    <Content Include="Content\Fonts\union.svg" />
+    <Content Include="Content\Fonts\unlock-fill.svg" />
+    <Content Include="Content\Fonts\unlock.svg" />
+    <Content Include="Content\Fonts\upc-scan.svg" />
+    <Content Include="Content\Fonts\upc.svg" />
+    <Content Include="Content\Fonts\upload.svg" />
+    <Content Include="Content\Fonts\vector-pen.svg" />
+    <Content Include="Content\Fonts\view-list.svg" />
+    <Content Include="Content\Fonts\view-stacked.svg" />
+    <Content Include="Content\Fonts\voicemail.svg" />
+    <Content Include="Content\Fonts\volume-down-fill.svg" />
+    <Content Include="Content\Fonts\volume-down.svg" />
+    <Content Include="Content\Fonts\volume-mute-fill.svg" />
+    <Content Include="Content\Fonts\volume-mute.svg" />
+    <Content Include="Content\Fonts\volume-off-fill.svg" />
+    <Content Include="Content\Fonts\volume-off.svg" />
+    <Content Include="Content\Fonts\volume-up-fill.svg" />
+    <Content Include="Content\Fonts\volume-up.svg" />
+    <Content Include="Content\Fonts\vr.svg" />
+    <Content Include="Content\Fonts\wallet-fill.svg" />
+    <Content Include="Content\Fonts\wallet.svg" />
+    <Content Include="Content\Fonts\wallet2.svg" />
+    <Content Include="Content\Fonts\watch.svg" />
+    <Content Include="Content\Fonts\wifi-1.svg" />
+    <Content Include="Content\Fonts\wifi-2.svg" />
+    <Content Include="Content\Fonts\wifi-off.svg" />
+    <Content Include="Content\Fonts\wifi.svg" />
+    <Content Include="Content\Fonts\window.svg" />
+    <Content Include="Content\Fonts\wrench.svg" />
+    <Content Include="Content\Fonts\x-circle-fill.svg" />
+    <Content Include="Content\Fonts\x-circle.svg" />
+    <Content Include="Content\Fonts\x-diamond-fill.svg" />
+    <Content Include="Content\Fonts\x-diamond.svg" />
+    <Content Include="Content\Fonts\x-octagon-fill.svg" />
+    <Content Include="Content\Fonts\x-octagon.svg" />
+    <Content Include="Content\Fonts\x-square-fill.svg" />
+    <Content Include="Content\Fonts\x-square.svg" />
+    <Content Include="Content\Fonts\x.svg" />
+    <Content Include="Content\Fonts\zoom-in.svg" />
+    <Content Include="Content\Fonts\zoom-out.svg" />
+    <Content Include="Content\Styles\Admin.css" />
+    <Content Include="Content\Styles\bootstrap.css" />
+    <Content Include="Content\Styles\New.css" />
     <Content Include="Global.asax" />
+    <Content Include="Areas\Admin\Views\Posts\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="SimpleBlogModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SimpleBlogModel.Context.cs</LastGenOutput>
+      <DependentUpon>SimpleBlogModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SimpleBlogModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SimpleBlogModel.edmx</DependentUpon>
+      <LastGenOutput>SimpleBlogModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\PostsController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
+    <Content Include="Content\Styles\Site.css" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\RoleProvider.cs" />
+    <Compile Include="Infrastructure\SelectedTabAttribute.cs" />
+    <Compile Include="Migrations\_001_UsersAndRoles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleBlogModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SimpleBlogModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleBlogModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SimpleBlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleBlogModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SimpleBlogModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Auth.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +1370,16 @@
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <EntityDeploy Include="SimpleBlogModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SimpleBlogModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="SimpleBlogModel.edmx.diagram">
+      <DependentUpon>SimpleBlogModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
+    <Content Include="Tools\DeployDb-Dev.bat" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,9 +1390,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Areas\Admin\Views\Users\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
