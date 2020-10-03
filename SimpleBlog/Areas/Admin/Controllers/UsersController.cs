@@ -1,4 +1,6 @@
-﻿using SimpleBlog.Infrastructure;
+﻿using SimpleBlog.Areas.Admin.ViewModels;
+using SimpleBlog.Infrastructure;
+using SimpleBlog.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,11 @@ namespace SimpleBlog.Areas.Admin.Controllers
         // GET: Admin/Users
         public ActionResult Index()
         {
-            return View();
+            return View(new UsersIndex
+            {
+                Users = Database.Session.Query<User>().ToList()
+
+            }) ;
         }
     }
 }
