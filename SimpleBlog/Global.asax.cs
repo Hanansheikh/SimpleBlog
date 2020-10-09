@@ -17,6 +17,7 @@ namespace SimpleBlog
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.Configure();
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
         }
         protected void Application_BeginRequest()
         {

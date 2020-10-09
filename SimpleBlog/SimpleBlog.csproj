@@ -190,6 +190,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Scripts\Forms.js" />
     <Content Include="Content\Fonts\alarm-fill.svg" />
     <Content Include="Content\Fonts\alarm.svg" />
     <Content Include="Content\Fonts\align-bottom.svg" />
@@ -1312,6 +1313,7 @@
     <Content Include="Content\Fonts\zoom-in.svg" />
     <Content Include="Content\Fonts\zoom-out.svg" />
     <Content Include="Content\Styles\Admin.css" />
+    <Content Include="Content\Styles\Adminnew.css" />
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\New.css" />
     <Content Include="Global.asax" />
@@ -1319,6 +1321,9 @@
     <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\New.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\ResetPassword.cshtml" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -1344,6 +1349,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\PostsController.cs" />
@@ -1358,6 +1364,7 @@
     </Compile>
     <Compile Include="Infrastructure\RoleProvider.cs" />
     <Compile Include="Infrastructure\SelectedTabAttribute.cs" />
+    <Compile Include="Infrastructure\TransactionFilter.cs" />
     <Compile Include="Migrations\_001_UsersAndRoles.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
